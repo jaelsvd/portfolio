@@ -3,6 +3,9 @@ import Navigation from "./components/navigation";
 import Banner from "./components/banner";
 import Portfolio from "./components/portfolio";
 import About from "./components/about";
+import Experience from "./components/experience";
+import WhatIDo from "./components/whatido";
+import Help from "./components/help";
 import "./App.css";
 
 class App extends Component {
@@ -16,6 +19,11 @@ class App extends Component {
           <Banner />
           <Portfolio />
           <About />
+          <br />
+          <Experience />
+          <br />
+          <WhatIDo />
+          <Help />
         </div>
       </div>
     );
