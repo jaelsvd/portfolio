@@ -1,0 +1,31 @@
+.sdm-bg {
+  color: #fff;
+  background: #8e45ae;
+  position: relative;
+}
+
+.container,
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container,
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
