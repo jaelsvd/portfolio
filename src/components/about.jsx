@@ -48,36 +48,44 @@ class About extends React.PureComponent {
                   autoplay={this.state.autoplay}
                   pauseOnVisibility={true}
                   onSelect={this.visiableOnSelect}
-                  slideshowSpeed={4000}
+                  slideshowSpeed={8000}
                 >
                   <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
+                    <br />
+                    <h1 className="text-center">
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
+                      facts
+                    </h1>
                     <div className="carousel-center">
                       <p className="quoteP_1">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. !
+                        Besides coding, I love languages, currently speak
+                        Spanish, English and little bit of French, need to
+                        practice more!. Would love to learn Arabic sometime
+                        soon, after feeling confident with French.
                       </p>
                     </div>
                     <div className="carousel-center"> </div>
-                    <div className="carousel-caption">Text</div>
+                    <div className="carousel-caption">
+                      <i className="fa fa-globe fa-3x" aria-hidden="true" />
+                    </div>
                   </div>
                   <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
+                    <br />
+                    <h1 className="text-center">
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
+                      facts
+                    </h1>
                     <div className="carousel-center">
                       <p className="quoteP_1">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. !
+                        I confess I am addicted to music, most of my creations
+                        (app wise) have been inspired with a nice playlist! If
+                        you work on this environment we all have our
+                        concentration technics!
                       </p>
                     </div>
-                    <div className="carousel-caption">Text</div>
+                    <div className="carousel-caption">
+                      <i className="fa fa-music fa-3x" aria-hidden="true" />
+                    </div>
                   </div>
                 </RBCarousel>
               </Col>
