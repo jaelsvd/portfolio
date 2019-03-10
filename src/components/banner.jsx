@@ -20,7 +20,7 @@ const SocialIcon = posed.i({
     boxShadow: "0px 0px 0px rgba(0,0,0,0)"
   },
   hover: {
-    scale: 1.2,
+    scale: 1.5,
     boxShadow: "0px 5px 10px rgba(0,0,0,0.2)"
   },
   press: {
@@ -29,23 +29,6 @@ const SocialIcon = posed.i({
   }
 });
 
-const Box = posed.div({
-  hoverable: true,
-  pressable: true,
-  init: {
-    scale: 1,
-    boxShadow: "0px 0px 0px rgba(0,0,0,0)"
-  },
-  hover: {
-    scale: 1.2,
-    boxShadow: "0px 5px 10px rgba(0,0,0,0.2)"
-  },
-  press: {
-    scale: 1.1,
-    boxShadow: "0px 2px 5px rgba(0,0,0,0.1)"
-  }
-});
-const Example = () => <Box className="box" />;
 class Banner extends Component {
   render() {
     return (
