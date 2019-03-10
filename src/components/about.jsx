@@ -87,6 +87,109 @@ class About extends React.PureComponent {
                       <i className="fa fa-music fa-3x" aria-hidden="true" />
                     </div>
                   </div>
+                  <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
+                    <br />
+                    <h1 className="text-center">
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
+                      facts
+                    </h1>
+                    <div className="carousel-center">
+                      <ul className="carousel-hobbies">
+                        <li>
+                          <i className="fa fa-tint " aria-hidden="true" />{" "}
+                          Swimming
+                        </li>
+                        <li>
+                          {" "}
+                          <i className="fa fa-code" aria-hidden="true" /> Coding
+                        </li>
+                        <li>
+                          {" "}
+                          <i
+                            className="fa fa-headphones"
+                            aria-hidden="true"
+                          />{" "}
+                          Music
+                        </li>
+                        <li>
+                          {" "}
+                          <i className="fa fa-book" aria-hidden="true" />{" "}
+                          Reading
+                        </li>
+                        <li>
+                          {" "}
+                          <i className="fa fa-grav" aria-hidden="true" />{" "}
+                          Dancing
+                        </li>
+                        <li>
+                          {" "}
+                          <i className="fa fa-film" aria-hidden="true" />{" "}
+                          Nextflix
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="carousel-caption">
+                      <h4>
+                        <em>Hobbies</em>
+                      </h4>
+                    </div>
+                  </div>
+                  <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
+                    <br />
+                    <h1 className="text-center">
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
+                      facts
+                    </h1>
+                    <div className="carousel-center">
+                      <p className="cat-lady">
+                        <strong className="kitty-princesa"> Cat lady!</strong>,
+                        guilty as charge, currently have two furry friends.
+                      </p>
+                    </div>
+                    <div className="carousel-caption">
+                      <i className="fa fa-paw fa-3x" aria-hidden="true" />
+                    </div>
+                  </div>
+                  <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
+                    <br />
+                    <h1 className="text-center">
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
+                      facts
+                    </h1>
+                    <div className="carousel-center">
+                      <img
+                        src={require("../img/personal/princesa.jpg")}
+                        className="card-img-top kitty"
+                        alt="Princesa"
+                      />
+                    </div>
+                    <div className="carousel-caption">
+                      <h4>
+                        Meet{" "}
+                        <strong className="kitty-princesa">Princesa!</strong>
+                      </h4>
+                    </div>
+                  </div>
+                  <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
+                    <br />
+                    <h1 className="text-center">
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
+                      facts
+                    </h1>
+                    <div className="carousel-center">
+                      <img
+                        src={require("../img/personal/bruno.jpg")}
+                        className="card-img-top kitty"
+                        alt="Bruno"
+                      />
+                    </div>
+                    <div className="carousel-caption">
+                      <h4>
+                        Meet
+                        <strong className="kitty-bruno"> Bruno!</strong>
+                      </h4>
+                    </div>
+                  </div>
                 </RBCarousel>
               </Col>
             </Row>

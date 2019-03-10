@@ -17,6 +17,14 @@ class Contact extends Component {
               <hr />
             </div>
           </div>
+          <div className="row">
+            <div className="col-sm-12 text-center">
+              <h4>
+                <i className="fa fa-thumbs-up fa-2x hire" /> I am available for
+                freelance hire
+              </h4>
+            </div>
+          </div>
           <section className="col-sm-10 col-sm-offset-1">
             <div className="row  text-center">
               <div className="col-sm-4 col-xs-12">

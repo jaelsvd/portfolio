@@ -339,27 +339,8 @@ class Help extends Component {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-sm-12 text-center">
-            <br />
-            <br />
-            <br />
-            <br />
-            <h4>
-              <i className="fa fa-thumbs-up fa-2x" /> I am available for
-              freelance hire
-            </h4>
-            <nav className="cl-effect-2">
-              <a href="#contact_me">
-                <span data-hover="Hire Me">Hire Me</span>
-              </a>
-            </nav>
-            <br />
-            <br />
-            <br />
-            <br />
-          </div>
-        </div>
+        <br />
+        <br />
       </section>
     );
   }

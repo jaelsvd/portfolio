@@ -22,12 +22,12 @@ class Banner extends Component {
                 </li>
                 <li>
                   <a href="#reviews" className="">
-                    General info
+                    My Facts
                   </a>
                 </li>
                 <li>
                   <a href="#about_me" className="">
-                    About
+                    Work Exprience
                   </a>
                 </li>
                 <li>
@@ -37,6 +37,11 @@ class Banner extends Component {
                 </li>
                 <li>
                   <a href="#hire_me" className="">
+                    Technologies
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact_me" className="">
                     Contact
                   </a>
                 </li>

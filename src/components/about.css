@@ -2,6 +2,32 @@
   color: white;
 }
 
+.carousel-hobbies {
+  color: white;
+  list-style: none;
+  font-size: 20px;
+}
+
+.card-img-top.kitty {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  max-height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+.kitty-princesa {
+  color: #f38bd1;
+}
+.kitty-bruno {
+  color: #beffa4;
+  max-width: 200px;
+}
+.cat-lady {
+  color: white;
+  font-size: 20px;
+}
 .quoteP_1 {
   box-sizing: border-box;
   color: rgb(255, 255, 255);

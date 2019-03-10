@@ -84,6 +84,9 @@ input[type="text"]::placeholder {
   color: #f5a623;
   border: 2px solid #f5a623;
 }
+.hire {
+  color: #f5a623;
+}
 #contact_me h3,
 #expertness h3,
 .btn-orange {
