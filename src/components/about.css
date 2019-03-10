@@ -1,0 +1,48 @@
+.quoteP_1 {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-align: center;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-size-adjust: 100%;
+  z-index: 100;
+  column-rule-color: rgb(255, 255, 255);
+  caret-color: rgb(255, 255, 255);
+  border: 0px none rgb(255, 255, 255);
+  font: normal normal 400 normal 18px / 25.7143px "Open Sans", sans-serif;
+  margin: 0px 0px 10px;
+  outline: rgb(255, 255, 255) none 0px;
+} /*#quoteP_1*/
+
+.quoteP_1:after {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-size-adjust: 100%;
+  column-rule-color: rgb(255, 255, 255);
+  caret-color: rgb(255, 255, 255);
+  border: 0px none rgb(255, 255, 255);
+  font: normal normal 400 normal 18px / 25.7143px "Open Sans", sans-serif;
+  outline: rgb(255, 255, 255) none 0px;
+} /*#quoteP_1:after*/
+
+.quoteP_1:before {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  content: '""';
+  display: block;
+  left: -10px;
+  opacity: 0.2;
+  position: absolute;
+  text-align: center;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-size-adjust: 100%;
+  top: -35px;
+  z-index: 48;
+  column-rule-color: rgb(255, 255, 255);
+  caret-color: rgb(255, 255, 255);
+  border: 0px none rgb(255, 255, 255);
+  font: normal normal 400 normal 100px / 142.857px Fontawesome;
+  outline: rgb(255, 255, 255) none 0px;
+} /*#quoteP_1:before*/

@@ -1,0 +1,73 @@
+#about_me h3 {
+  color: #f5a623;
+  text-transform: capitalize;
+}
+#about_me h3 i {
+  margin-right: 14px;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.block {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+  margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+  padding-inline-start: 40px;
+}
+#expertness h3 i,
+.icon-list i {
+  margin-right: 14px;
+}
+
+a:-webkit-any-link {
+  color: #212529;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:-webkit-any-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #f5a623;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*----------------------------*/
+/*    Animation             */
+/*----------------------------*/
+.color:hover {
+  background: #53a7ea;
+}

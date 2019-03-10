@@ -1,0 +1,59 @@
+.cl-effect-2 a span {
+  position: relative;
+  display: inline-block;
+  padding: 0 14px;
+  background: #f5a623;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.block {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+#hire_me h4 {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+#hire_me i {
+  color: #f5a623;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.cl-effect-2 a {
+  line-height: 44px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+#hire_me a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.csstransforms3d .cl-effect-2 a span::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5a623;
+  content: attr(data-hover);
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}

@@ -3,9 +3,13 @@ import React, { Component } from "react";
 class Portfolio extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container" id="portfolio">
+        <br />
+        <br />
+        <br />
+        <br />
         <div className="row ">
-          <div className="col-4 ">
+          <div className="col-md-4 col-sm-4 col-xs-6 ">
             <div className="card-group">
               <div className="card">
                 <img
@@ -29,7 +33,7 @@ class Portfolio extends Component {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-sm-4 col-xs-6">
             <div className="card-group">
               <div className="card">
                 <img
@@ -53,7 +57,7 @@ class Portfolio extends Component {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-sm-4 col-xs-6">
             <div className="card-group">
               <div className="card">
                 <img
@@ -78,6 +82,10 @@ class Portfolio extends Component {
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   }

@@ -1,90 +1,99 @@
 import React, { Component } from "react";
+import "./whatido.css";
 
 class WhatIDo extends Component {
   render() {
     return (
       <div className="banner">
-        <section class="container-fluid sdm-bg" id="expertness">
-          <div class="row">
-            <div class="overlay" />
-            <div class="col-sm-12">
-              <h3 class="text-center">
-                <i class="fa fa-bookmark" />
+        <br />
+        <br />
+        <section className="container-fluid sdm-bg" id="expertness">
+          <div className="row">
+            <div className="overlay" />
+            <div className="col-sm-12">
+              <br />
+              <h3 className="text-center">
+                <i className="fa fa-bookmark" />
                 What I Do
               </h3>
             </div>
           </div>
-          <section class="container">
-            <div class="row">
-              <div class="col-sm-4 col-xs-6">
-                <div class="block">
-                  <i class="fa fa-android fa-3x" />
-                  <h4 class="text-uppercase">Mobile Apps</h4>
+          <section className="container">
+            <div className="row">
+              <div className="col-sm-4 col-xs-6">
+                <div className="block">
+                  <i className="fa fa-android fa-3x" />
+                  <h4 className="text-uppercase">Mobile Apps</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
+                    Development of mobile apps such in iOS, Androd, Windows
+                    Phone, etc. With ionic and Xamarin.
                   </p>
                 </div>
               </div>
-              <div class="col-sm-4 col-xs-6">
-                <div class="block">
-                  <i class="fa fa-code fa-3x" />
-                  <h4 class="text-uppercase">web design</h4>
+              <div className="col-sm-4 col-xs-6">
+                <div className="block">
+                  <i className="fa fa-code fa-3x" />
+                  <h4 className="text-uppercase">web design</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
+                    Development of web pages, with reactjs, ionic, ASP.net, MVC,
+                    nodejs.
                   </p>
                 </div>
               </div>
-              <div class="col-sm-4 col-xs-6">
-                <div class="block">
-                  <i class="fa fa-magic fa-3x" />
-                  <h4 class="text-uppercase">UX/UI Design</h4>
+              <div className="col-sm-4 col-xs-6">
+                <div className="block">
+                  <i className="fa fa-magic fa-3x" />
+                  <h4 className="text-uppercase">UX/UI Responsiveness</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
+                    On the last couple of years I've been perfectioning my
+                    skills, when it comes to responsive behaviors, each page
+                    needs to display properly on mobile phones, tablets and
+                    different types of desktops or laptops.
                   </p>
                 </div>
               </div>
-              <div class="col-sm-4 col-xs-6">
-                <div class="block">
-                  <i class="fa fa-camera fa-3x" />
-                  <h4 class="text-uppercase">Photography</h4>
+              <div className="col-sm-4 col-xs-6">
+                <div className="block">
+                  <i className="fa fa-users fa-3x" />
+                  <h4 className="text-uppercase">Scrum</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
+                    As a manager I've developed the skills to work with teams,
+                    clients, and a constant increase of our skills result of a
+                    great communication. Worked with several teams across the
+                    globe and overseas. Different time zones haven't been an
+                    issue when working with the proper methodology.
                   </p>
                 </div>
               </div>
-              <div class="col-sm-4 col-xs-6">
-                <div class="block">
-                  <i class="fa fa-lightbulb-o fa-3x" />
-                  <h4 class="text-uppercase">brand identity</h4>
+              <div className="col-sm-4 col-xs-6">
+                <div className="block">
+                  <i className="fa fa-code-fork fa-3x" />
+                  <h4 className="text-uppercase">Versioning</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
+                    Worked with various versioning technologies, but the most
+                    familiar ones have always been{" "}
+                    <i className="fa fa-github" />
+                    GitHub and <i className="fa fa-bitbucket" /> Bitbucket.
+                    Always using the best practices to avoid problems. Worked
+                    with Pull-requests and rebase, merges, partial merges, etc.
                   </p>
                 </div>
               </div>
-              <div class="col-sm-4 col-xs-6">
-                <div class="block">
-                  <i class="fa fa-user-secret fa-3x" />
-                  <h4 class="text-uppercase">analytics</h4>
+              <div className="col-sm-4 col-xs-6">
+                <div className="block">
+                  <i className="fa fa-user-secret fa-3x" />
+                  <h4 className="text-uppercase">analytics</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
+                    Always providing the best solutions when clients are looking
+                    for direction.
                   </p>
                 </div>
               </div>
             </div>
           </section>
         </section>
+
+        <div id="overlay-whatido" />
       </div>
     );
   }

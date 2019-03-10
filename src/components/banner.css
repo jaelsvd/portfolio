@@ -1,7 +1,190 @@
+#overlay {
+  bottom: 0px;
+  height: 140px;
+  opacity: 0.7;
+  position: absolute;
+  right: 0px;
+  width: 1920px;
+  caret-color: rgb(255, 255, 255);
+  background: linear-gradient(
+        30deg,
+        rgb(142, 69, 174) 12%,
+        transparent 12.5%,
+        transparent 87%,
+        rgb(142, 69, 174) 87.5%,
+        rgb(142, 69, 174) 0px
+      )
+      repeat scroll 0px 0px / 80px 140px padding-box border-box,
+    linear-gradient(
+        150deg,
+        rgb(142, 69, 174) 12%,
+        transparent 12.5%,
+        transparent 87%,
+        rgb(142, 69, 174) 87.5%,
+        rgb(142, 69, 174) 0px
+      )
+      repeat scroll 0px 0px / 80px 140px padding-box border-box,
+    linear-gradient(
+        30deg,
+        rgb(142, 69, 174) 12%,
+        transparent 12.5%,
+        transparent 87%,
+        rgb(142, 69, 174) 87.5%,
+        rgb(142, 69, 174) 0px
+      )
+      repeat scroll 40px 70px / 80px 140px padding-box border-box,
+    linear-gradient(
+        150deg,
+        rgb(142, 69, 174) 12%,
+        transparent 12.5%,
+        transparent 87%,
+        rgb(142, 69, 174) 87.5%,
+        rgb(142, 69, 174) 0px
+      )
+      repeat scroll 40px 70px / 80px 140px padding-box border-box,
+    linear-gradient(
+        60deg,
+        rgb(159, 89, 189) 25%,
+        transparent 25.5%,
+        transparent 75%,
+        rgb(159, 89, 189) 75%,
+        rgb(159, 89, 189) 0px
+      )
+      repeat scroll 0px 0px / 80px 140px padding-box border-box,
+    linear-gradient(
+        60deg,
+        rgb(159, 89, 189) 25%,
+        transparent 25.5%,
+        transparent 75%,
+        rgb(159, 89, 189) 75%,
+        rgb(159, 89, 189) 0px
+      )
+      repeat scroll 40px 70px / 80px 140px padding-box border-box,
+    rgb(121, 59, 148) none repeat scroll 0px 0px / 80px 140px padding-box
+      border-box;
+} /*#signup-btnDIV_1*/
+
 .banner {
   color: #fff;
   background: #8e45ae;
 }
+.sdm-bg ul.menu-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.sdm-bg ul .menu-center li a {
+  padding-top: 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+
+.scroll-nav li.active a {
+  background: 0 0;
+  color: #fff;
+}
+.scroll-nav li a.sdm-active {
+  background: #fff;
+  color: #8e45ae;
+  height: 20px;
+  border-radius: 5px;
+  -webkit-animation: grow 0.25s ease;
+  animation: grow 0.25s ease;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.nav-pills > li > a {
+  border-radius: 0;
+}
+.nav > li > a {
+  padding: 10px 15px;
+}
+.nav > li,
+.nav > li > a {
+  display: block;
+  position: relative;
+}
+#home a {
+  color: #fff;
+  text-decoration: none;
+}
+#home a {
+  background-color: transparent;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.sdm-bg ul.menu-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.sdm-bg {
+  color: #fff;
+  background: #8e45ae;
+  position: relative;
+}
+
 .profile_picture {
   width: 145px;
 }

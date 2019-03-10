@@ -1,14 +1,20 @@
-.banner {
-  color: #fff;
-  background: #8e45ae;
+#contact_me h3 {
+  margin-top: 0;
 }
 
-.block {
-  margin-top: 26px;
-  margin-bottom: 26px;
+#contact_me h3,
+#expertness h3,
+.btn-orange {
+  font-weight: 700;
 }
-#expertness .block h4,
-#expertness .block p {
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+#contact_me .block h4 {
   color: #fff;
 }
 
@@ -23,10 +29,40 @@
 .text-uppercase {
   text-transform: uppercase;
 }
-#overlay-whatido {
+hr {
+  border: 0;
+  height: 3px;
+  background: #fff;
+  width: 30px;
+}
+
+hr {
+  box-sizing: content-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list-inline,
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+ol,
+ul {
+  margin-bottom: 10px;
+}
+dl,
+ol,
+ul {
+  margin-top: 0;
+}
+
+#overlay-contact {
   bottom: 0px;
   height: 140px;
   opacity: 0.7;
+  position: absolute;
   right: 0px;
   width: 1920px;
   caret-color: rgb(255, 255, 255);

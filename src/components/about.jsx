@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import RBCarousel from "react-bootstrap-carousel";
-
+import "./about.css";
 const styles = { height: 400, width: "100%" };
 
 class About extends React.PureComponent {
@@ -16,7 +15,7 @@ class About extends React.PureComponent {
     console.log(`active=${active} && direction=${direction}`);
   };
   visiableOnSelect = active => {
-    console.log(`visiable onSelect active=${active}`);
+    // console.log(`visiable onSelect active=${active}`);
   };
   slideNext = () => {
     this.slider.slideNext();
@@ -37,36 +36,54 @@ class About extends React.PureComponent {
     this.setState({ leftIcon, rightIcon });
   };
   render() {
-    let { leftIcon, rightIcon } = this.state;
+    //let { leftIcon, rightIcon } = this.state;
     return (
-      <div className="container-fluid">
-        <Row>
-          <Col span={12} style={{ marginTop: 20 }}>
-            <RBCarousel
-              version={4}
-              autoplay={this.state.autoplay}
-              pauseOnVisibility={true}
-              onSelect={this.visiableOnSelect}
-              slideshowSpeed={4000}
-            >
-              <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
-                <div className="carousel-center">
-                  <div>This carsouel won't change if invisiable</div>
-                  <div>pauseOnVisibility = true</div>
-                </div>
-                <div className="carousel-center"> </div>
-                <div className="carousel-caption">Text</div>
-              </div>
-              <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
-                <div className="carousel-center">
-                  <div>This carsouel won't change if invisiable</div>
-                  <div>pauseOnVisibility = true</div>
-                </div>
-                <div className="carousel-caption">Text</div>
-              </div>
-            </RBCarousel>
-          </Col>
-        </Row>
+      <div className="row" id="reviews">
+        <div className="col-12">
+          <div className="container-fluid">
+            <Row>
+              <Col span={12} style={{ marginTop: 20 }}>
+                <RBCarousel
+                  version={4}
+                  autoplay={this.state.autoplay}
+                  pauseOnVisibility={true}
+                  onSelect={this.visiableOnSelect}
+                  slideshowSpeed={4000}
+                >
+                  <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
+                    <div className="carousel-center">
+                      <p className="quoteP_1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. !
+                      </p>
+                    </div>
+                    <div className="carousel-center"> </div>
+                    <div className="carousel-caption">Text</div>
+                  </div>
+                  <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
+                    <div className="carousel-center">
+                      <p className="quoteP_1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. !
+                      </p>
+                    </div>
+                    <div className="carousel-caption">Text</div>
+                  </div>
+                </RBCarousel>
+              </Col>
+            </Row>
+          </div>
+        </div>
       </div>
     );
   }
@@ -81,7 +98,7 @@ const Col = props => (
     {props.children}
   </div>
 );
-const Button = props => {
+/*const Button = props => {
   const { style, bsStyle, onClick } = props;
   const className = bsStyle ? `btn btn-${bsStyle}` : "btn";
   return (
@@ -90,5 +107,5 @@ const Button = props => {
     </button>
   );
 };
-
+*/
 export default About;
