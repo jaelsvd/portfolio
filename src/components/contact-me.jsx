@@ -49,34 +49,45 @@ class Contact extends Component {
                   </ul>
                 </div>
               </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <form action="" className="row">
+                  <div className="col-sm-6 col-xs-12">
+                    <div className="form-group">
+                      <label>Your Name</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="your_name"
+                        placeholder="Write Your Name"
+                      />
+                      <label>Email</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="your_email"
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+                  </div>
 
-              <div action="" className="row">
-                <div className="col-sm-6 col-xs-12">
-                  <div className="form-group">
-                    <label>Your Name</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="your_name"
-                      placeholder="Write Your Name"
-                    />
+                  <div className="col-sm-6 col-xs-12">
+                    <div className="form-group">
+                      <label>Your Message</label>
+                      <textarea
+                        className="form-control"
+                        rows="5"
+                        placeholder="Write Your Message"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="col-sm-6 col-xs-12">
-                  <div className="form-group">
-                    <label>Your Message</label>
-                    <textarea
-                      className="form-control"
-                      rows="5"
-                      placeholder="Write Your Message"
-                    />
+                  <div className="col-sm-12 text-center margin-top-55 margin-bottom-55">
+                    <button type="submit" className="btn btn-orange">
+                      Send Message
+                    </button>
                   </div>
-                </div>
-                <div className="col-sm-12 text-center margin-top-55 margin-bottom-55">
-                  <button type="submit" className="btn btn-orange">
-                    Send Message
-                  </button>
-                </div>
+                </form>
               </div>
             </div>
           </section>
