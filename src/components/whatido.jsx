@@ -91,9 +91,13 @@ class WhatIDo extends Component {
               </div>
             </div>
           </section>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div id="overlay-whatido" />
         </section>
-
-        <div id="overlay-whatido" />
       </div>
     );
   }
