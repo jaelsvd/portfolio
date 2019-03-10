@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./portfolio.css";
 
 class Portfolio extends Component {
   render() {
@@ -8,17 +9,89 @@ class Portfolio extends Component {
         <br />
         <br />
         <br />
+
         <div className="row ">
           <div className="col-md-4 col-sm-4 col-xs-6 ">
             <div className="card-group">
               <div className="card">
-                <img
-                  src="http://www.jaelsaavedra.com/img/weather.PNG"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <a
+                  href="https://warm-ridge-40848.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../img/weather.PNG")}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Weather App</h5>
+                  <p className="card-text">
+                    This weather app was created with reactjs, using the API
+                    from
+                    <a href="https://openweathermap.org/">
+                      <strong> Open Wheater Mapp</strong>
+                    </a>
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      Last updated 3 mins ago
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-4 col-xs-6">
+            <div className="card-group">
+              <div className="card">
+                <a
+                  href="https://warm-ridge-40848.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../img/calculator-react-img.png")}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+
+                <div className="card-body">
+                  <h5 className="card-title">Calculator App</h5>
+                  <p className="card-text">
+                    This project was so much fun, as well created with react,
+                    also helped me learn how to divide components from logic.
+                    Hosted on Heroku.
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      Last updated 3 mins ago
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-4 col-xs-6">
+            <div className="card-group">
+              <div className="card">
+                <a
+                  href="https://warm-ridge-40848.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../img/vidly.PNG")}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+
+                <div className="card-body">
+                  <h5 className="card-title">Movies App</h5>
                   <p className="card-text">
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
@@ -33,20 +106,31 @@ class Portfolio extends Component {
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-sm-4 col-xs-6">
+        </div>
+        <div className="row ">
+          <div className="col-md-4 col-sm-4 col-xs-6 ">
             <div className="card-group">
               <div className="card">
-                <img
-                  src="http://www.jaelsaavedra.com/img/calculator-react-img.png"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <a
+                  href="https://warm-ridge-40848.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../img/dice.png")}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Weather App</h5>
                   <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This weather app was created with reactjs, using the API
+                    from
+                    <a href="https://openweathermap.org/">
+                      <strong> Open Wheater Mapp</strong>
+                    </a>
                   </p>
                   <p className="card-text">
                     <small className="text-muted">
@@ -60,13 +144,51 @@ class Portfolio extends Component {
           <div className="col-md-4 col-sm-4 col-xs-6">
             <div className="card-group">
               <div className="card">
-                <img
-                  src="http://www.jaelsaavedra.com/img/vidly.PNG"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <a
+                  href="https://warm-ridge-40848.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../img/InstaGruas.jpg")}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Calculator App</h5>
+                  <p className="card-text">
+                    This project was so much fun, as well created with react,
+                    also helped me learn how to divide components from logic.
+                    Hosted on Heroku.
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      Last updated 3 mins ago
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-4 col-xs-6">
+            <div className="card-group">
+              <div className="card">
+                <a
+                  href="https://warm-ridge-40848.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../img/Mind1.png")}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+
+                <div className="card-body">
+                  <h5 className="card-title">Movies App</h5>
                   <p className="card-text">
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
