@@ -2,6 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "keywords": [],
+  "main": "src/index.js",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "font-awesome": "^4.7.0",
@@ -9,6 +11,8 @@
     "react-bootstrap-carousel": "^3.4.1",
     "react-dom": "^16.8.4",
     "react-fontawesome": "^1.6.1",
+    "react-pose": "^4.0.8",
+    "react-pose-text": "^3.1.0",
     "react-responsive-carousel": "^3.1.47",
     "react-scripts": "2.1.8"
   },

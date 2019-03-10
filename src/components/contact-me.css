@@ -69,6 +69,12 @@ input[type="text"]::placeholder {
   opacity: 1; /* Firefox */
 }
 /*---end form ---*/
+.box {
+  width: 100px;
+  height: 100px;
+  background: #ff1c68;
+  transform-origin: 50% 50%;
+}
 
 .btn-orange {
   background: #f5a623;

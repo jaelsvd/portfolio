@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./contact-me.css";
-
 class Contact extends Component {
-  state = {};
   render() {
     return (
       <div className="banner" id="contact_me">

@@ -1,6 +1,51 @@
 import React, { Component } from "react";
+import SplitText from "react-pose-text";
+import posed from "react-pose";
 import "./banner.css";
 
+const charPoses = {
+  exit: { opacity: 0, y: 20 },
+  enter: {
+    opacity: 1,
+    y: 0,
+    delay: ({ charIndex }) => charIndex * 30
+  }
+};
+
+const SocialIcon = posed.i({
+  hoverable: true,
+  pressable: true,
+  init: {
+    scale: 1,
+    boxShadow: "0px 0px 0px rgba(0,0,0,0)"
+  },
+  hover: {
+    scale: 1.2,
+    boxShadow: "0px 5px 10px rgba(0,0,0,0.2)"
+  },
+  press: {
+    scale: 1.1,
+    boxShadow: "0px 2px 5px rgba(0,0,0,0.1)"
+  }
+});
+
+const Box = posed.div({
+  hoverable: true,
+  pressable: true,
+  init: {
+    scale: 1,
+    boxShadow: "0px 0px 0px rgba(0,0,0,0)"
+  },
+  hover: {
+    scale: 1.2,
+    boxShadow: "0px 5px 10px rgba(0,0,0,0.2)"
+  },
+  press: {
+    scale: 1.1,
+    boxShadow: "0px 2px 5px rgba(0,0,0,0.1)"
+  }
+});
+const Example = () => <Box className="box" />;
 class Banner extends Component {
   render() {
     return (
@@ -52,27 +97,69 @@ class Banner extends Component {
                 alt="Profile Pic"
                 src="https://scontent.ftij2-1.fna.fbcdn.net/v/t1.0-9/36654854_10156333860183190_8877714988723077120_n.jpg?_nc_cat=106&_nc_ht=scontent.ftij2-1.fna&oh=50e60d23b336719017b094a8f4fd707e&oe=5D0BDAF6"
               />
-              <h1 className="text-capitalize text-center">Jael Saavedra</h1>
+              <h1 className="text-capitalize text-center">
+                <SplitText
+                  initialPose="exit"
+                  pose="enter"
+                  charPoses={charPoses}
+                >
+                  Jael Saavedra
+                </SplitText>
+              </h1>
               <h3 className="text-capitalize text-center">
-                Fullstack Developer
+                <SplitText
+                  initialPose="exit"
+                  pose="enter"
+                  charPoses={charPoses}
+                >
+                  Fullstack Developer
+                </SplitText>
               </h3>
               <hr />
               <div className="text-center margin-bottom-135">
                 <ul className="social-networks">
-                  <i className="fa fa-facebook">
-                    <a href="https://www.facebook.com/">FB </a>
-                  </i>
-
-                  <li className="fa fa-linkedin">
-                    <a href="https://www.linkedin.com/">Linked In</a>
-                  </li>
-                  <i className="fa fa-github">
-                    <a href="https://github.com">Git</a>
-                  </i>
-                  <li className="fa fa-instagram">
-                    <a href="https://instagram.com">Insta</a>
-                  </li>
+                  <SocialIcon
+                    className="fa fa-facebook social-icon"
+                    onClick={() =>
+                      window.open(
+                        "https://www.facebook.com/jael.saavedra",
+                        "_blank"
+                      )
+                    }
+                  />
+                  <SocialIcon
+                    className="fa fa-linkedin social-icon"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/jaelsaavedra",
+                        "_blank"
+                      )
+                    }
+                  />
+                  <SocialIcon
+                    className="fa fa-github social-icon"
+                    onClick={() =>
+                      window.open("https://github.com/jaelsvd", "_blank")
+                    }
+                  />
+                  <SocialIcon
+                    className="fa fa-stack-overflow social-icon"
+                    onClick={() =>
+                      window.open(
+                        "https://stackexchange.com/users/10156716/jael-saavedra",
+                        "_blank"
+                      )
+                    }
+                  />
+                  <SocialIcon
+                    className="fa fa-instagram social-icon"
+                    onClick={() =>
+                      window.open("http://instagram.com/jaelsvd", "_blank")
+                    }
+                  />
                 </ul>
+                <br />
+                <br />
               </div>
             </div>
           </div>
