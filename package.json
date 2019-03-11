@@ -6,7 +6,9 @@
   "main": "src/index.js",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "emailjs-com": "2.3.2",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
     "react": "^16.8.4",
     "react-bootstrap-carousel": "^3.4.1",
     "react-dom": "^16.8.4",
@@ -14,7 +16,8 @@
     "react-pose": "^4.0.8",
     "react-pose-text": "^3.1.0",
     "react-responsive-carousel": "^3.1.47",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "toastr": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

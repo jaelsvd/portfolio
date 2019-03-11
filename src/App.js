@@ -6,6 +6,7 @@ import Experience from "./components/experience";
 import WhatIDo from "./components/whatido";
 import Help from "./components/help";
 import Contact from "./components/contact-me";
+import ContactForm from "./components/contact-form";
 import "./App.css";
 
 class App extends Component {
@@ -14,7 +15,6 @@ class App extends Component {
       <div className="row">
         <div className="col-12">
           <div className="overlay" />
-
           <Banner />
           <Portfolio />
           <About />
