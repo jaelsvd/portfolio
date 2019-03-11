@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SplitText from "react-pose-text";
 import posed from "react-pose";
+import pdf from "../files/Jael-Saavedra.pdf";
 import "./banner.css";
 
 const charPoses = {
@@ -71,6 +72,12 @@ class Banner extends Component {
                 <li>
                   <a href="#contact_me" className="">
                     Contact
+                  </a>
+                </li>
+                <li>
+                  <a href={pdf} target="_blank">
+                    <i class="fa fa-download" aria-hidden="true" />
+                    Download CV
                   </a>
                 </li>
               </ul>
