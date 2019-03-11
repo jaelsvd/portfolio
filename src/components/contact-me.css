@@ -59,12 +59,23 @@ ul {
 }
 /*----- FORM -------*/
 input[type="text"],
-textarea {
+input[type="email"] {
   background-color: #8e45ae;
 }
-
+.form-control.message {
+  background-color: #8e45ae;
+}
 input[type="text"]::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f8d3c4;
+  opacity: 1; /* Firefox */
+}
+input[type="email"]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f8d3c4;
+  opacity: 1; /* Firefox */
+}
+.form-control.message::placeholder {
   color: #f8d3c4;
   opacity: 1; /* Firefox */
 }

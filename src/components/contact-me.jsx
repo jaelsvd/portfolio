@@ -1,7 +1,78 @@
 import React, { Component } from "react";
+import toastr from "toastr";
+import * as emailjs from "emailjs-com";
+import "jquery";
 import "./contact-me.css";
+
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      account: {
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+        errors: {
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        }
+      }
+    };
+  }
+
+  handleInputChange = ({ currentTarget: input }) => {
+    //event.preventDefault();
+
+    //const target = event.target;
+    const account = { ...this.state.account };
+    account[input.name] = input.value;
+    this.setState({ account });
+  };
+
+  sentMessage(event) {
+    event.preventDefault();
+
+    var template_params = {
+      from_name:
+        this.state.account.name + " (" + this.state.account.email + ")",
+      to_name: "Jael",
+      subject: this.state.account.subject,
+      message_html: this.state.account.message
+    };
+
+    emailjs
+      .send(
+        "gmail",
+        "template_KtdlOhQk",
+        template_params,
+        "user_EohFCcr0PXgUJhqHlqsuB"
+      )
+      .then(
+        function(response) {
+          toastr.success("Message sent succesful");
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function(err) {
+          toastr.error(err);
+          console.log(err);
+        }
+      );
+
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
+  }
+
   render() {
+    const { account } = this.state;
+
     return (
       <div className="banner" id="contact_me">
         <div className="container">
@@ -62,34 +133,66 @@ class Contact extends Component {
                   <div className="col-sm-6 col-xs-12">
                     <div className="form-group">
                       <label>Your Name</label>
+
                       <input
                         type="text"
-                        className="form-control"
+                        name="name"
                         id="your_name"
+                        className="form-control"
+                        required="required"
                         placeholder="Write Your Name"
+                        onChange={this.handleInputChange}
+                        value={account.name}
                       />
                       <label>Email</label>
                       <input
-                        type="text"
-                        className="form-control"
                         id="your_email"
+                        className="form-control"
+                        type="email"
+                        name="email"
                         placeholder="Enter Your Email"
+                        required="required"
+                        onChange={this.handleInputChange}
+                        value={account.email}
                       />
                     </div>
                   </div>
 
                   <div className="col-sm-6 col-xs-12">
                     <div className="form-group">
+                      <label>Subject</label>
+                      <input
+                        type="text"
+                        name="subject"
+                        id="your_subject"
+                        className="form-control"
+                        placeholder="Enter a subject"
+                        required="required"
+                        onChange={this.handleInputChange}
+                        value={account.subject}
+                        error={account.errors.subject}
+                      />
+
                       <label>Your Message</label>
                       <textarea
-                        className="form-control"
-                        rows="5"
+                        name="message"
+                        id="your_message"
+                        required="required"
+                        className="form-control message"
                         placeholder="Write Your Message"
+                        rows="5"
+                        onChange={this.handleInputChange}
+                        value={account.message}
+                        error={account.errors.message}
                       />
                     </div>
                   </div>
                   <div className="col-sm-12 text-center margin-top-55 margin-bottom-55">
-                    <button type="submit" className="btn btn-orange">
+                    <button
+                      type="submit"
+                      className="btn btn-orange"
+                      onClick={this.sentMessage.bind(this)}
+                    >
                       Send Message
                     </button>
                   </div>
