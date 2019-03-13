@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import SplitText from "react-pose-text";
 import posed from "react-pose";
-import pdf from "../files/Jael-Saavedra.pdf";
 import "./banner.css";
+
+const Box = posed.div({
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
+});
 
 const charPoses = {
   exit: { opacity: 0, y: 20 },
@@ -31,7 +35,17 @@ const SocialIcon = posed.i({
 });
 
 class Banner extends Component {
+  state = { isVisible: true };
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({ isVisible: !this.state.isVisible });
+    }, 1000);
+  }
+
   render() {
+    const { isVisible } = this.state;
+
     return (
       <div className="banner container-fluid sdm-bg" id="home">
         <br />
@@ -75,10 +89,23 @@ class Banner extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href={pdf} target="_blank">
-                    <i class="fa fa-download" aria-hidden="true" />
-                    Download CV
-                  </a>
+                  <i className="fa fa-download" aria-hidden="true" />
+                  Download CV
+                </li>
+                <li>
+                  <Box
+                    className="box text-center"
+                    pose={isVisible ? "visible" : "hidden"}
+                  >
+                    <p>
+                      <i
+                        className="fa fa-exclamation-triangle"
+                        aria-hidden="true"
+                      />
+                      Page under <br />
+                      construction
+                    </p>
+                  </Box>
                 </li>
               </ul>
               <br />
@@ -87,6 +114,7 @@ class Banner extends Component {
                 alt="Profile Pic"
                 src="https://scontent.ftij2-1.fna.fbcdn.net/v/t1.0-9/36654854_10156333860183190_8877714988723077120_n.jpg?_nc_cat=106&_nc_ht=scontent.ftij2-1.fna&oh=50e60d23b336719017b094a8f4fd707e&oe=5D0BDAF6"
               />
+
               <h1 className="text-capitalize text-center">
                 <SplitText
                   initialPose="exit"

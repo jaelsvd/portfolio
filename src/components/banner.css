@@ -63,7 +63,15 @@
     rgb(121, 59, 148) none repeat scroll 0px 0px / 80px 140px padding-box
       border-box;
 } /*#signup-btnDIV_1*/
-
+.box {
+  width: 200px;
+  height: 70px;
+  background: #ff1c68;
+  transform-origin: 50% 50%;
+}
+.box p {
+  padding-top: 10px;
+}
 .banner {
   color: #fff;
   background: #8e45ae;

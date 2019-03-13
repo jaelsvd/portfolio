@@ -35,11 +35,6 @@ class Portfolio extends Component {
                       <strong> Open Wheater Mapp</strong>
                     </a>
                   </p>
-                  <p className="card-text">
-                    <small className="text-muted">
-                      Last updated 3 mins ago
-                    </small>
-                  </p>
                 </div>
               </div>
             </div>
@@ -65,11 +60,6 @@ class Portfolio extends Component {
                     This project was so much fun, as well created with react,
                     also helped me learn how to divide components from logic.
                     Hosted on Heroku.
-                  </p>
-                  <p className="card-text">
-                    <small className="text-muted">
-                      Last updated 3 mins ago
-                    </small>
                   </p>
                 </div>
               </div>
@@ -97,113 +87,12 @@ class Portfolio extends Component {
                     lead-in to additional content. This content is a little bit
                     longer.
                   </p>
-                  <p className="card-text">
-                    <small className="text-muted">
-                      Last updated 3 mins ago
-                    </small>
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="row ">
-          <div className="col-md-4 col-sm-4 col-xs-6 ">
-            <div className="card-group">
-              <div className="card">
-                <a
-                  href="https://warm-ridge-40848.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={require("../img/dice.png")}
-                    className="card-img-top"
-                    alt="..."
-                  />
-                </a>
 
-                <div className="card-body">
-                  <h5 className="card-title">Weather App</h5>
-                  <p className="card-text">
-                    This weather app was created with reactjs, using the API
-                    from
-                    <a href="https://openweathermap.org/">
-                      <strong> Open Wheater Mapp</strong>
-                    </a>
-                  </p>
-                  <p className="card-text">
-                    <small className="text-muted">
-                      Last updated 3 mins ago
-                    </small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-4 col-xs-6">
-            <div className="card-group">
-              <div className="card">
-                <a
-                  href="https://warm-ridge-40848.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={require("../img/InstaGruas.jpg")}
-                    className="card-img-top"
-                    alt="..."
-                  />
-                </a>
-
-                <div className="card-body">
-                  <h5 className="card-title">Calculator App</h5>
-                  <p className="card-text">
-                    This project was so much fun, as well created with react,
-                    also helped me learn how to divide components from logic.
-                    Hosted on Heroku.
-                  </p>
-                  <p className="card-text">
-                    <small className="text-muted">
-                      Last updated 3 mins ago
-                    </small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-4 col-xs-6">
-            <div className="card-group">
-              <div className="card">
-                <a
-                  href="https://warm-ridge-40848.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={require("../img/Mind1.png")}
-                    className="card-img-top"
-                    alt="..."
-                  />
-                </a>
-
-                <div className="card-body">
-                  <h5 className="card-title">Movies App</h5>
-                  <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <p className="card-text">
-                    <small className="text-muted">
-                      Last updated 3 mins ago
-                    </small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <br />
         <br />
         <br />
