@@ -53,8 +53,8 @@ class About extends React.PureComponent {
                   <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
                     <br />
                     <h1 className="text-center">
-                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
-                      facts
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" />{" "}
+                      About Me
                     </h1>
                     <div className="carousel-center">
                       <p className="quoteP_1">
@@ -72,8 +72,8 @@ class About extends React.PureComponent {
                   <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
                     <br />
                     <h1 className="text-center">
-                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
-                      facts
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" />{" "}
+                      About Me
                     </h1>
                     <div className="carousel-center">
                       <p className="quoteP_1">
@@ -90,8 +90,8 @@ class About extends React.PureComponent {
                   <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
                     <br />
                     <h1 className="text-center">
-                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
-                      facts
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" />{" "}
+                      About Me
                     </h1>
                     <div className="carousel-center">
                       <ul className="carousel-hobbies">
@@ -137,8 +137,8 @@ class About extends React.PureComponent {
                   <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
                     <br />
                     <h1 className="text-center">
-                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
-                      facts
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" />{" "}
+                      About Me
                     </h1>
                     <div className="carousel-center">
                       <p className="cat-lady">
@@ -153,8 +153,8 @@ class About extends React.PureComponent {
                   <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
                     <br />
                     <h1 className="text-center">
-                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
-                      facts
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" />{" "}
+                      About Me
                     </h1>
                     <div className="carousel-center">
                       <img
@@ -173,8 +173,8 @@ class About extends React.PureComponent {
                   <div style={{ ...styles, backgroundColor: "#8e45ae" }}>
                     <br />
                     <h1 className="text-center">
-                      <i className="fa fa-lightbulb-o" aria-hidden="true" /> My
-                      facts
+                      <i className="fa fa-lightbulb-o" aria-hidden="true" />{" "}
+                      About Me
                     </h1>
                     <div className="carousel-center">
                       <img
