@@ -89,10 +89,6 @@ class Banner extends Component {
                   </a>
                 </li>
                 <li>
-                  <i className="fa fa-download" aria-hidden="true" />
-                  Download CV
-                </li>
-                <li>
                   <Box
                     className="box text-center"
                     pose={isVisible ? "visible" : "hidden"}
