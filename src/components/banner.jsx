@@ -84,7 +84,7 @@ class Banner extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#contact_me" className="">
+                  <a href="#contact_me" className="" id="contact-jael">
                     Contact
                   </a>
                 </li>
