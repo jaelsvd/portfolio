@@ -79,6 +79,9 @@ input[type="email"]::placeholder {
   color: #f8d3c4;
   opacity: 1; /* Firefox */
 }
+.form-control.contact:focus {
+  background-color: #8e45ae;
+}
 /*---end form ---*/
 
 .btn-orange {

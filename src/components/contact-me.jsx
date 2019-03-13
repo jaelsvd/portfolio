@@ -138,7 +138,7 @@ class Contact extends Component {
                         type="text"
                         name="name"
                         id="your_name"
-                        className="form-control"
+                        className="form-control contact"
                         required="required"
                         placeholder="Write Your Name"
                         onChange={this.handleInputChange}
@@ -147,7 +147,7 @@ class Contact extends Component {
                       <label>Email</label>
                       <input
                         id="your_email"
-                        className="form-control"
+                        className="form-control contact"
                         type="email"
                         name="email"
                         placeholder="Enter Your Email"
@@ -165,7 +165,7 @@ class Contact extends Component {
                         type="text"
                         name="subject"
                         id="your_subject"
-                        className="form-control"
+                        className="form-control contact"
                         placeholder="Enter a subject"
                         required="required"
                         onChange={this.handleInputChange}
@@ -178,7 +178,7 @@ class Contact extends Component {
                         name="message"
                         id="your_message"
                         required="required"
-                        className="form-control message"
+                        className="form-control message contact"
                         placeholder="Write Your Message"
                         rows="5"
                         onChange={this.handleInputChange}
